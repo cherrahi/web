@@ -1,0 +1,103 @@
+/* إعادة تعيين الهوامش والحشوات لكل العناصر */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تنسيق الجسم */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* تنسيق الحاوية الرئيسية */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+   
+}
+
+/* العنوان */
+h1 {
+    color: #500374;
+    margin-bottom: 20px;
+}
+
+/* تنسيق النموذج */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+ /*تنسيق الحقول المدخلة*/
+input[type="text"], input[type="number"] {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* تنسيق الزر */
+button {
+    padding: 12px;
+    background-color: #47046e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6f1e8a;
+}
+
+/* تنسيق التنبيهات */
+.alert {
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* تنسيق اللون لألوان التنبيهات */
+.alert-info {
+    background-color: #17a2b8;
+    color: white;
+}
+
+.alert-warning {
+    background-color: #ffc107;
+    color: black;
+}
+
+.alert-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.alert-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* التنسيق لعرض النتيجة */
+#result {
+    margin-top: 20px;
+}
+
+/* تحسين عرض الرسالة بعد الحساب */
+#result .alert {
+    margin-top: 20px;
+}
