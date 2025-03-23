@@ -1,0 +1,12 @@
+# تعيين index.php كصفحة افتراضية
+DirectoryIndex index.php
+
+# تفعيل إعادة كتابة الروابط
+RewriteEngine On
+
+# التأكد أن الطلب ليس لملف أو مجلد حقيقي
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# توجيه الطلبات إلى index.php
+RewriteRule ^(.*)$ index.php?/$1 [L]
